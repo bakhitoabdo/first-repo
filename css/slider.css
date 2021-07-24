@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.slider .layer{
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: relative;
+    z-index: 2;
+    display: block;
+    opacity: .7;
+}
+.slider .static_image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.slider .slide{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 0;
+    transition: 1s;
+    opacity: 0;
+}
+.slider .active{
+    left: 0;
+    opacity: 1;
+}
+.slider .text_container{
+    color: #ddd;
+    padding: 40px;
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 22;
+}
+.slider .text_container .label{
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+}
+.slider .text_container p{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px;
+}
+.slider .btn_container{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;
+    z-index: 22;
+}
+.slider .btn_container .slider_btn{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid orange;
+    margin: 5px;
+}

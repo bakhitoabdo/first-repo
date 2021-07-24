@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.skills{
+    width: 100%;
+    height: fit-content;
+    background: #ffffff;
+
+}
+.skills .container{
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    padding: 40px 0;
+}
+.skills .container .label_part .label{
+    width: fit-content;
+    margin: auto;
+    padding: 5px 0;
+    border-bottom: 3px solid orange;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.skills .container .content_wraper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    text-transform: capitalize;
+}
+.skills .container .content_wraper .technical_skills{
+    width: 48%;
+    height: fit-content;
+    padding: 10px 20px;
+}
+.skills .container .content_wraper .technical_skills .label{
+    margin: 0 10px 0 0;
+    line-height: 1.4;
+    display: block;
+    text-transform: capitalize;
+}
+.skills .container .content_wraper .skill_container{
+    margin: 30px 0;
+}
+.skills .container .content_wraper .skill_container .bar{
+    width: 100%;
+    height: fit-content;
+    background: #2e2e2e;
+    color: white;
+    border-radius: 20px;
+}
+.skills .container .content_wraper .technical_skills .skill_container .bar .fill{
+    height: fit-content;
+    background: orange;
+    display: block;
+    padding: 3.5px 10px;
+    font-size: 14px;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    position: relative;
+}
+/* ----------------------------------------------*/
+.html_css{
+    width: 95%;
+    animation: html_css_width 2s 1 ;
+}
+.javascript{
+    width: 80%;
+    animation: javascript_width 2s 1 ;
+}
+.php{
+    width: 90%;
+    animation: php_width 2s 1 ;
+}
+.communication{
+    width: 92%;
+    animation: communication_width 2s 1 ;
+}
+.teamwork{
+    width: 75%;
+    animation: teamwork_width 2s 1 ;
+}
+.creativity{
+    width: 98%;
+    animation: creativity_width 2s 1 ;
+}
+
+/* ----------------------------------------------*/
+
+.html_css .precentage{
+    animation: opacity 5s 1;
+}
+.javascript .precentage{
+    animation: opacity 5s 1;
+
+}
+.php .precentage{
+    animation: opacity 5s 1;
+}
+.communication .precentage{
+    animation: opacity 5s 1;
+}
+.teamwork .precentage{
+    animation: opacity 5s 1;
+}
+.creativity .precentage{
+    animation: opacity 5s 1;
+}
+
+/* ----------------------------------------------*/
+
+.skills .container .content_wraper .skill_container .bar .precentage{
+    text-align: end;
+    color: #2e2e2e;
+    font-size: 10px;
+    font-weight: 700;
+    background: orange;
+    position: absolute;
+    top: -30px;
+    right: -15px;
+    padding: 6px 3px;
+    border-radius: 3px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+@keyframes html_css_width {
+    from{
+        width: 0;
+    }
+    to{
+        width: 95%;
+    }
+}
+@keyframes javascript_width {
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes php_width {
+    from{
+        width: 0;
+    }
+    to{
+        width: 90%;
+    }
+}
+@keyframes communication_width {
+    from{
+        width: 0;
+    }
+    to{
+        width: 92%;
+    }
+}
+@keyframes teamwork_width {
+    from{
+        width: 0;
+    }
+    to{
+        width: 75%;
+    }
+}
+@keyframes creativity_width {
+    from{
+        width: 0;
+    }
+    to{
+        width: 98%;
+    }
+}
+
+
+
+
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@media(max-width: 700px){
+    .skills .container .content_wraper{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skills .container .content_wraper .technical_skills{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
