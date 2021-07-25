@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contact us</title>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/top_hero.css">
+        <link rel="stylesheet" href="css/services.css">
+        <link rel="stylesheet" href="css/features .css">
+        <link rel="stylesheet" href="css/protofolio.css">
+        <link rel="stylesheet" href="css/testimonial2.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/price.css">
+        <link rel="stylesheet" href="css/call_to_action_hero.css">
+        <link rel="stylesheet" href="css/skills.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/general_styles.css">
+        <link rel="stylesheet" href="css/slider.css">
+    </head>
+    <style>
+
+    </style>
+    <body>
+        <!-- start of navigation bar-->
+        <div class="navbar" id="navbar">
+            <div class="container">
+                <div class="screen_container">
+                    <div class="logo">
+                        <img src="images/bakhoot.png" alt="">
+                        bakhoot
+                    </div>
+                    <div class="links">
+                        <a href="index.html" class="nav_link">home</a>
+                        <a href="services.html" class="nav_link">service</a>
+                        <a href="portofolio.html" class="nav_link">protofolio</a>
+                        <a href="contact.html" class="nav_link active">contact</a>
+                        <a href="about.html" class="nav_link">about</a>
+                    </div>
+                </div>
+                <div class="mobile_container">
+                    <div class="visible_part">
+                        <div class="logo">
+                            <img src="images/bakhoot.png" alt="">
+                            bakhoot
+                        </div>
+                        <div class="toggler">
+                            <i class="fa fa-bars" id="nav_btn"></i>
+                        </div>
+                    </div>
+                    <div class="unvisible_part" id="unvisible_part">
+                        <ul class="links">
+                            <a href="index.html" class="nav_link">home</a>
+                            <a href="services.html" class="nav_link">service</a>
+                            <a href="portofolio.html" class="nav_link">protofolio</a>
+                            <a href="contact.html" class="nav_link active">contact</a>
+                            <a href="about.html" class="nav_link">about</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/navbar.js"></script>
+        <!-- end of navigation bar-->
+
+        <!--start of the slider part-->
+        <div class="slider">
+            <img src="images/static_bg.jpg" alt="" class="static_image">
+            <img src="images/bg_1.jpg" alt="" class="slide">
+            <img src="images/bg_2.jpg" alt="" class="slide">
+            <img src="images/bg_3.jpg" alt="" class="slide">
+            <img src="images/bg_4.jpg" alt="" class="slide">
+            <img src="images/bg_5.jpg" alt="" class="slide">
+            <div class="layer"></div>
+            <div class="text_container">
+                <h1 class="label primary_label">label</h1>
+                <p class="primary_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, tempora!</p>
+            </div>
+            <div class="btn_container">
+                <div class="slider_btn" id="btn1"></div>
+                <div class="slider_btn" id="btn2"></div>
+                <div class="slider_btn" id="btn3"></div>
+                <div class="slider_btn" id="btn4"></div>
+                <div class="slider_btn" id="btn5"></div>
+            </div>
+        </div>
+        <script src="js/slider.js"></script>
+        <!--end of the slider part-->
+
+        <!--start of the contact section-->
+        <div class="contact_us">
+            <div class="container">
+                <div class="waiting_container" id="waiting_container">
+                    <i class="fa fa-times cancel_icon" onclick="cancel_waiting_container()"></i>
+                    <h3 class="label"> message</h3>
+                    <p class="message_content" id="result">Lorem ipsum dolor sit amet consectetur elit. Quos, tempore.</p>
+                    <i class=" reaction_icon" id="reaction_icon"></i>
+                    <button id="ok_btn">Ok</button>
+                </div>
+                <div class="label_part">
+                    <h1 class="label">contact us</h1>
+                    <p>having you as a friend will be a great experience . always feel free
+                        to contact me any time </p>
+                    <div class="subrater"></div>
+                </div>
+                <div class="form">
+                    <div class="form_container">
+                        <p class="form_label">Contact Us</p>
+                        <div class="row">
+                            <input id="user" class="name" placeholder="Name" type="text">
+                            <input id="sender_email" class="email" placeholder="Email" type="email">
+                        </div>
+                        <input id="sender_subject" class="subject" placeholder="Subject" type="text">
+                        <textarea id="sender_message" placeholder="message" class="message" name="text" cols="30" rows="10"></textarea>
+                        <button id="send_btn" class="send_btn">send</button>
+                    </div>
+                    <div class="image_container">
+                        <img src="images/car1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="map_wrapper">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.75769411628!2d2.4170999206244823!3d48.858950681268105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2z2KjYp9ix2YrYs9iMINmB2LHZhtiz2Kc!5e0!3m2!1sar!2s!4v1619706846511!5m2!1sar!2s" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="js/contact.js"></script>
+        <!--end of the contact section-->
+
+        <!-- start of the call to action part-->
+        <div class="call_to_action_hero">
+            <img src="images/car9.jpg" alt="" class="hero_image">
+            <div class="layer"></div>
+            <div class="container">
+                <div class="text_container">
+                    <h1 class="label colored_label">
+                        you have made your choice ?
+                    </h1>
+                    <p>please don,t forget to contact us before ordering</p>
+                    <a href="#" class="btn">order now ! </a>
+                </div>
+            </div>
+        </div>
+        <!-- end of the call to action part-->
+
+        <!-- start of the footer part-->
+        <div class="footer">
+            <div class="container">
+                <div class="first_row">
+                    <h3 class="label">contact</h3>
+                    <p class="colored_text"> <br>having you as a friend will be a great experience . always feel free to contact me any time .</p>
+                    <span class="email">Email : bakhoo@gmail.com</span>
+                    <div class="subrater"></div>
+                </div>
+                <div class="second_row">
+                    <div class="column_1 col">
+                        <p>contact :</p>
+                        <div class="social_links">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="column_2 col">
+                        <p class="copy_rights">all right are reserved</p>
+                    </div>
+                    <div class="column_3 col">
+                        <a href="#">about</a>
+                        <a href="#">testimonial</a>
+                        <a href="#">contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- start of the footer part-->
+    </body>
+</html>
